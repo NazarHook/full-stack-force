@@ -1,9 +1,8 @@
-
-.container {
+/* .container {
     width: 375px;
     background: #1c1d20;
     padding-bottom: 50px;
-}
+} */
 
 
 .review-top {
@@ -84,11 +83,6 @@
     color: transparent;
 }
 
-/* #swiper-wrapper {
-    height: auto;
-} */
-
-
-#swiper-wrapper {
+.swiper-wrapper {
     height: auto;
 }
