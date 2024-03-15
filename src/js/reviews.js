@@ -1,11 +1,6 @@
 'use strict';
 import axios from 'axios';
 import Swiper from 'swiper';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-
-import 'swiper/css';
-import 'accordion-js/dist/accordion.min.css';
 console.log('hello');
 
 const BASE_URI = 'https://portfolio-js.b.goit.study/api/reviews';
