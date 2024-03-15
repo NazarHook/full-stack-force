@@ -14,7 +14,7 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
+  /* color: #242424; */
   background-color: rgba(255, 255, 255, 0.87);
 
   font-synthesis: none;
@@ -25,12 +25,12 @@
 }
 .container {
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 0px;
 }
 
 @media screen and (max-width: 375px) {
   .container {
-    padding: 0 20px;
+    padding: 0 16px;
     margin: 0 auto;
   }
 
@@ -65,3 +65,4 @@
   }
 
 }
+
