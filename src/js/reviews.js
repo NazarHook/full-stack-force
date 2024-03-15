@@ -1,5 +1,8 @@
 import axios from 'axios';
 import Swiper from 'swiper';
+import 'swiper/css'
+import 'swiper/css/pagination'
+import 'swiper/css/navigation'
 console.log('hello');
 
 const BASE_URI = 'https://portfolio-js.b.goit.study/api/reviews';
