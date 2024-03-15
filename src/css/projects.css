@@ -1,3 +1,23 @@
 .projects-page{
     background-color: orange;
 }
+
+
+/* ================ TABLET HERO ================ */
+
+@media (min-width: 768px) {}
+
+/* ================ /TABLET HERO ================ */
+
+
+/* ================ 1280px DESKTOP HERO ================ */
+
+@media (min-width: 1280px) {}
+
+/* ================ /1280px DESKTOP HERO ================ */
+
+/* ================ 1440px DESKTOP HERO ================ */
+
+@media (min-width: 1440px) {}
+
+/* ================ /1440px DESKTOP HERO ================ */
