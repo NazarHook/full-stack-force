@@ -1,35 +1,17 @@
-'use strict';
 import axios from 'axios';
-import Swiper from 'swiper';
-console.log('hello');
 
 const BASE_URI = 'https://portfolio-js.b.goit.study/api/reviews';
-
-const reviews = await getReviewsFromServer();
-const galleryMarkup = createGalleryMarkup(reviews);
-
-document.getElementById('gallery').innerHTML = galleryMarkup;
+const gallery = document.querySelector('.gallery');
 
 async function getReviewsFromServer() {
   try {
-    const response = await axios.get(BASE_URI);
-    const data = response.data;
-    console.log('Received reviews from server:', data);
-    return data;
-  } catch (error) {
-    console.error('Error while fetching reviews:', error.message);
-    throw error;
-  }
-}
+    const { data } = await axios.get(BASE_URI);
 
-function createGalleryMarkup(data) {
-  return `
-    <div class="swiper">
-        <p class="review-top">REVIEWS</p>
-      <div id = "swiper-wrapper" class="swiper-wrapper">
-        ${data
-          .map(
-            ({ author, avatar_url, review }) => `
+    gallery.innerHTML = `<div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+       ${data
+         .map(
+           ({ author, avatar_url, review }) => `
           <div class="swiper-slide">
             <div class="gallery-item">
               <img src="${avatar_url}" class="gallery-image" alt="${author}"/>
@@ -38,20 +20,25 @@ function createGalleryMarkup(data) {
             </div>
           </div>
           `
-          )
-          .join('')}
-            </div>
-            <div class= "swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
+         )
+         .join('')}
     </div>
-    `;
-}
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>`;
 
-const swiper = new Swiper('.swiper', {
-  direction: 'horizontal',
-  navigation: {
-    prevEl: '.swiper-button-prev',
-    nextEl: '.swiper-button-next',
-  },
-  spaceBetween: 20,
-});
+    new Swiper('.mySwiper', {
+      slidesPerView: 1,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  } catch (error) {
+    console.error('Error while fetching reviews:', error.message);
+    throw error;
+  }
+}
+getReviewsFromServer();
