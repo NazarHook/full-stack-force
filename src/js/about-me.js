@@ -1,3 +1,4 @@
+ About-me
 'use strict'
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
@@ -42,4 +43,5 @@ new Swiper('.swiper-container', {
   slideActiveClass: 'selected',
 
 });
+
 
