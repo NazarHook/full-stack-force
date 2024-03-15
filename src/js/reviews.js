@@ -2,6 +2,7 @@
 import axios from 'axios';
 import Swiper from 'swiper';
 console.log('hello');
+
 const BASE_URI = 'https://portfolio-js.b.goit.study/api/reviews';
 
 const reviews = await getReviewsFromServer();
