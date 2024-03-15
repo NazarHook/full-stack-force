@@ -1,22 +1,38 @@
+'use strict';
 import axios from 'axios';
 import Swiper from 'swiper';
-import 'swiper/css'
-import 'swiper/css/pagination'
-import 'swiper/css/navigation'
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 console.log('hello');
 
 const BASE_URI = 'https://portfolio-js.b.goit.study/api/reviews';
-const gallery = document.querySelector('.gallery');
+
+const reviews = await getReviewsFromServer();
+const galleryMarkup = createGalleryMarkup(reviews);
+
+document.getElementById('gallery').innerHTML = galleryMarkup;
 
 async function getReviewsFromServer() {
   try {
-    const { data } = await axios.get(BASE_URI);
+    const response = await axios.get(BASE_URI);
+    const data = response.data;
+    console.log('Received reviews from server:', data);
+    return data;
+  } catch (error) {
+    console.error('Error while fetching reviews:', error.message);
+    throw error;
+  }
+}
 
-    gallery.innerHTML = `<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
-       ${data
-         .map(
-           ({ author, avatar_url, review }) => `
+function createGalleryMarkup(data) {
+  return `
+    <div class="swiper">
+        <p class="review-top">REVIEWS</p>
+      <div id = "swiper-wrapper" class="swiper-wrapper">
+        ${data
+          .map(
+            ({ author, avatar_url, review }) => `
           <div class="swiper-slide">
             <div class="gallery-item">
               <img src="${avatar_url}" class="gallery-image" alt="${author}"/>
@@ -25,25 +41,20 @@ async function getReviewsFromServer() {
             </div>
           </div>
           `
-         )
-         .join('')}
+          )
+          .join('')}
+            </div>
+            <div class= "swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
-  </div>`;
-
-    new Swiper('.mySwiper', {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
-  } catch (error) {
-    console.error('Error while fetching reviews:', error.message);
-    throw error;
-  }
+    `;
 }
-getReviewsFromServer();
+
+const swiper = new Swiper('.swiper', {
+  direction: 'horizontal',
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
+  },
+  spaceBetween: 20,
+});
