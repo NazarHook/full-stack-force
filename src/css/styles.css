@@ -65,10 +65,3 @@
   }
 
 }
-.preload{
-  display: flex;
-  text-transform: uppercase;
-  text-decoration: underline;
-  font-weight: bold;
-  margin-bottom: 8px;
-}
