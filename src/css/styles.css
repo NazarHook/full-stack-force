@@ -33,7 +33,6 @@
     padding: 0 16px;
     margin: 0 auto;
   }
-
 }
 
 @media screen and (min-width: 375px) {
@@ -50,18 +49,8 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
-  .container {
-    padding: 0 100px;
-    width: 1280px;
-  }
-}
-
-
-
 @media screen and (min-width: 1440px) {
   .container {
     width: 1440px;
   }
-
 }

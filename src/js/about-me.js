@@ -25,7 +25,7 @@ new Swiper('.swiper-container', {
   keyboard: true,
   mousewheel: true,
   slidesPerView: 2,
-  centeredSlides: true,
+  // centeredSlides: true,
 
     speed:1000,
   breakpoints: {
@@ -35,7 +35,7 @@ new Swiper('.swiper-container', {
     786: {
       slidesPerView: 3
     },
-    1140: {
+    1440: {
       slidesPerView: 6,
     }
   },
