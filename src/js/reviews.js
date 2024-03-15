@@ -25,7 +25,7 @@ function createGalleryMarkup(data) {
   return `
     <div class="swiper">
         <p class="review-top">REVIEWS</p>
-      <div class="swiper-wrapper">
+      <div id = "swiper-wrapper" class="swiper-wrapper">
         ${data
           .map(
             ({ author, avatar_url, review }) => `

@@ -65,11 +65,7 @@
     padding: 14px;
     width: 52px;
     height: 52px;
-    background-image: url('../images/icons/sprite.svg');
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: transparent;
+    background-color: transparent;
 }
 
 
@@ -84,13 +80,13 @@
     padding: 14px;
     width: 52px;
     height: 52px;
-    background-image: url("../images/icons/sprite.svg#icon-arrow-right");
-    /* Змінено на icon-arrow-right */
-    background-size: 24px;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: transparent;
+    background-color: transparent;
 }
+
+/* #swiper-wrapper {
+    height: auto;
+} */
+
 
 .swiper-wrapper {
     height: auto;
