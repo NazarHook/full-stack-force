@@ -154,12 +154,7 @@ About-me
   margin-top: 32px;
   overflow: hidden;
 }
-.technologies-list {
-  /* overflow: hidden; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
+
 .technologies-item {
   font-weight: 500;
   font-size: 16px;
