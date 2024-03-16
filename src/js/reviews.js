@@ -8,7 +8,8 @@ async function getReviewsFromServer() {
     const { data } = await axios.get(BASE_URI);
 
     gallery.innerHTML = `<div class="swiper mySwiper">
-    <div class="swiper-wrapper">
+      <p class = "review">REVIEW</p>
+    <div id = "swiper-wrapper" class="swiper-wrapper">
        ${data
          .map(
            ({ author, avatar_url, review }) => `
@@ -23,22 +24,47 @@ async function getReviewsFromServer() {
          )
          .join('')}
     </div>
-    <div class="swiper-button-next"></div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-pagination"></div>
+    <div><button id = "swiper-button-next" class="swiper-button-next">
+  <svg>
+    <use href="../images/icons/sprite.svg#icon-arrow-right"></use>
+  </svg>
+</button></div>
+
+    <div><button id = "swiper-button-prev" class="swiper-button-prev">
+  <svg>
+    <use href="../images/icons/sprite.svg#icon-arrow-left"></use>
+  </svg>
+</button></div>
+
   </div>`;
 
     new Swiper('.mySwiper', {
       slidesPerView: 1,
-      spaceBetween: 30,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
+      spaceBetween: 16,
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
+      },
+      keyboard: true,
+      mausewheel: true,
+      slidesPerView: 1,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 16,
+        },
+        786: {
+          slidesPerView: 2,
+          spaceBetween: 16,
+        },
+        1280: {
+          slidesPerView: 3,
+          spaceBetween: 16,
+        },
+        1440: {
+          slidesPerView: 4,
+          spaceBetween: 16,
+        },
       },
     });
   } catch (error) {
