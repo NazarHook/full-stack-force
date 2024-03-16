@@ -1,4 +1,3 @@
- About-me
 'use strict'
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
@@ -26,8 +25,6 @@ new Swiper('.swiper-container', {
   keyboard: true,
   mousewheel: true,
   slidesPerView: 2,
-  // centeredSlides: true,
-
     speed:1000,
   breakpoints: {
     320: {
@@ -41,7 +38,6 @@ new Swiper('.swiper-container', {
     }
   },
   slideActiveClass: 'selected',
-
 });
 
 
