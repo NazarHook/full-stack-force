@@ -45,4 +45,4 @@ new Swiper('.swiper-container', {
     },
   },
   slideActiveClass: 'selected',
-});
+}});
