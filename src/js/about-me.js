@@ -1,5 +1,4 @@
-About - me;
-('use strict');
+'use strict';
 import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
@@ -26,15 +25,20 @@ new Swiper('.swiper-container', {
   keyboard: true,
   mousewheel: true,
   slidesPerView: 2,
+
   // centeredSlides: true,
 
   speed: 1000,
+
+    speed:1000,
   breakpoints: {
     320: {
       slidesPerView: 2,
     },
     786: {
       slidesPerView: 3,
+    768: {
+      slidesPerView: 3
     },
     1440: {
       slidesPerView: 6,

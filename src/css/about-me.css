@@ -1,22 +1,6 @@
-/* =================Base================== */
 body {
   background-color: #1c1d20;
-  font-family: 'Roboto', sans-serif;
   color: #fafafa;
-}
-a {
-  text-decoration: none;
-}
-ul,
-ol {
-  list-style: none;
-}
-button {
-  cursor: pointer;
-}
-img {
-  display: block;
-  max-width: 100%;
 }
 
 .page-container {
@@ -26,22 +10,6 @@ img {
 }
 main {
   flex-grow: 1;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
-  margin-top: 0;
-  margin-bottom: 0;
-}
-ol,
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
 }
 
 .visually-hidden {
@@ -78,8 +46,10 @@ ul {
     padding: 0 15px;
   }
 }
-About-me .about-me-container {
+.about-me-container {
   padding: 32px 0;
+.about-me-container {
+  padding: 64px 0 33px 0;
 }
 .first-section {
   margin-bottom: 32px;
@@ -145,6 +115,9 @@ About-me .about-me-container {
 .margin {
   margin-bottom: 32px;
 }
+.margin-min {
+  margin-bottom: 10px;
+}
 .technologies {
   display: flex;
   justify-content: space-between;
@@ -153,12 +126,7 @@ About-me .about-me-container {
   margin-top: 32px;
   overflow: hidden;
 }
-.technologies-list {
-  /* overflow: hidden; */
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
-}
+
 .technologies-item {
   font-weight: 500;
   font-size: 16px;
@@ -188,23 +156,9 @@ About-me .about-me-container {
   height: 100%;
 }
 
-/* .swiper-pagination-bullet-active {
-  background-color: #C6E327;
-} */
-.prev-item {
-  border: none;
-  background-color: red;
-  width: 20px;
-  height: 20px;
-}
 .button-next {
-  /* /* border: 1px solid rgba(250, 250, 250, 0.2); 
-  border-radius: 100px; */
   border: none;
   background-color: transparent;
-  /* padding: 9px;
-  width: 36px;
-  height: 36px; */
   margin-top: auto;
   margin-bottom: auto;
 }
@@ -227,8 +181,7 @@ About-me .about-me-container {
 }
 
 .accordion:after {
-  /* content: url("data:image/svg+xml;charset=UTF-8,<svg xmlns='http://www.w3.org/2000/svg' height='24' viewBox='0 -960 960 960' width='24'><path d='M480-345 240-585l56-56 184 184 184-184 56 56-240 240Z'/></svg>"); */
-  content: url("data:image/svg+xml;charset=UTF-8,<svg  width='20' height='20' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1.5L6 6.5L1 1.5' stroke='white' stroke-width='2'/></svg>");
+  content: url("data:image/svg+xml;charset=UTF-8,<svg  width='16' height='16' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1.5L6 6.5L1 1.5' stroke='white' stroke-width='2'/></svg>");
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
   background-color: transparent;
@@ -246,8 +199,10 @@ About-me .about-me-container {
 }
 .arrow-right {
   stroke: #3b3b3b;
+  fill: none;
   width: 40px;
   height: 40px;
+  margin-top: 32px;
 }
 
 @media screen and (min-width: 768px) {
@@ -255,6 +210,7 @@ About-me .about-me-container {
     width: 704px;
     height: 700px;
     padding: 64px;
+    font-size: 38px;
   }
   .technologies {
     width: 600px !important;
@@ -265,16 +221,40 @@ About-me .about-me-container {
     width: 704px;
     height: 700px;
   }
+  .accordion:after {
+    content: url("data:image/svg+xml;charset=UTF-8,<svg  width='20' height='20' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1.5L6 6.5L1 1.5' stroke='white' stroke-width='2'/></svg>");
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 100px;
+    background-color: transparent;
+    box-sizing: border-box;
+    padding: 9px;
+    width: 36px;
+    height: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+    transition: 0.4s;
+  }
   .technologies-item {
     height: 200px !important;
     width: 200px !important;
+    font-size: 20px;
   }
   .accordion:after {
     width: 40px;
     height: 40px;
   }
+
+  .margin {
+    margin-bottom: 16px;
+  }
+  .arrow-right {
+    margin-top: 64px;
+  }
 }
 @media screen and (min-width: 1440px) {
+  .about-me-container {
+    padding: 106px 0 55px 0;
+  }
   .about-me-text {
     width: 680px;
     height: 700px;
@@ -287,7 +267,14 @@ About-me .about-me-container {
     width: 1200px !important;
     margin-top: 96px;
   }
+
   .about-text {
     margin-left: 696px;
+  }
+  .margin {
+    margin-bottom: 32px;
+  }
+  .arrow-right {
+    margin-top: 96px;
   }
 }
