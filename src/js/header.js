@@ -1,5 +1,4 @@
 'use strict';
-
 const menu = document.querySelector('.mobile-modal');
 const menuBtn = document.querySelector('.menu-btn');
 const closeBtn = document.querySelector('.close-btn');

@@ -23,6 +23,9 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+body{
+  overflow-x:hidden
+}
 .container {
   margin: 0 auto;
   padding: 0 0px;
