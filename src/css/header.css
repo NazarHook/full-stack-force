@@ -106,6 +106,9 @@ bottom: 32px;
     .container {
         margin: 0 auto;
     }
+    .mobile-modal{
+        display: none;
+    }
 }
 @media screen and (min-width: 768px) {
 .burger-icon{
