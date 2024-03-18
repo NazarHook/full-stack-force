@@ -25,14 +25,14 @@ async function getReviewsFromServer() {
          .join('')}
     </div>
     <div><button id = "swiper-button-next" class="swiper-button-next">
-    <svg>
-    <use href="/images/icons/sprite.svg#icon-arrow-right"></use>
+    <svg width="52" height="52">
+    <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
     </svg>
 </button></div>
 
     <div><button id = "swiper-button-prev" class="swiper-button-prev">
-  <svg>
-    <use href="/images/icons/sprite.svg#icon-arrow-left"></use>
+  <svg width="52" height="52">
+    <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
   </svg>
 </button></div>
 
