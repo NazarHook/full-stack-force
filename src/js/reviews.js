@@ -26,13 +26,13 @@ async function getReviewsFromServer() {
     </div>
     <div><button id = "swiper-button-next" class="swiper-button-next">
   <svg>
-    <use href="../images/icons/sprite.svg#icon-arrow-right"></use>
+    <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
   </svg>
 </button></div>
 
     <div><button id = "swiper-button-prev" class="swiper-button-prev">
   <svg>
-    <use href="../images/icons/sprite.svg#icon-arrow-left"></use>
+    <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
   </svg>
 </button></div>
 
@@ -46,21 +46,18 @@ async function getReviewsFromServer() {
         prevEl: '.swiper-button-prev',
       },
       keyboard: true,
-      mausewheel: true,
+      mousewheel: true,
       slidesPerView: 1,
       breakpoints: {
         320: {
           slidesPerView: 1,
           spaceBetween: 16,
         },
-        786: {
+        768: {
           slidesPerView: 2,
           spaceBetween: 16,
         },
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 16,
-        },
+
         1440: {
           slidesPerView: 4,
           spaceBetween: 16,
