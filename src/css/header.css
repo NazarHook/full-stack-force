@@ -96,7 +96,7 @@
        letter-spacing: -0.02em;
        border-style: none;  
        color: #FAFAFA;
-       background-color: #ed3b44;
+       background-color: #c6e327;
     width: 163px;
     height: 55px;
     border: none;
@@ -107,6 +107,9 @@
        align-items: center;  
        letter-spacing: 0;
    bottom: 32px; 
+   }
+   .order-btn:hover{
+    background-color: #abc41f;
    }
 .nav {
     display: none;
@@ -139,6 +142,9 @@ color: #FAFAFA;
 .button-active {
     display: none;
 }
+.button-active:hover{
+    background-color: #abc41f;
+   }
    @media screen and (min-width: 375px) {
        .container {
            margin: 0 auto;
@@ -169,7 +175,7 @@ justify-content: space-between;
     display: block;
    }
    .button-active {
-    background-color: #ed3b44;
+    background-color: #c6e327;
     width: 163px;
     height: 55px;
     border: none;

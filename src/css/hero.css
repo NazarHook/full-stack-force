@@ -68,6 +68,7 @@
 .hero-link-list li:hover,
 .hero-link-list li:last-child:hover {
     border: 1px solid #fafafa;
+    cursor: pointer;
 }
 
 .hero-link-list li:last-child {
