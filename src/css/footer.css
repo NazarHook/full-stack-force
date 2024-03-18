@@ -14,8 +14,7 @@
 
   padding-top: 64px;
 
-  max-width: 100vw;
-  max-height: 100vh;
+  min-width: 320px;
 }
 
 @media screen and (min-width: 375px) {
@@ -38,6 +37,33 @@
   }
 }
 
+.wrapper {
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 375px) {
+  .wrapper {
+    width: 375px;
+    padding: 32px 16px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .wrapper {
+    padding: 80px 32px;
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .wrapper {
+    width: 1440px;
+    padding: 80px 196px;
+  }
+}
+
 .container-footer {
   background-image: url(../images/footer/375px/footer-bg-375px-1x.png);
   background-repeat: no-repeat;
@@ -45,7 +71,6 @@
   background-size: 84px 552px;
 
   min-height: 552px;
-  padding: 32px 16px;
 }
 
 @media screen and (min-width: 768px) {
@@ -56,7 +81,6 @@
     background-size: 198px 636px;
 
     min-height: 636px;
-    padding: 80px 32px;
   }
 }
 
@@ -68,7 +92,6 @@
     background-size: 400px 636px;
 
     min-height: 636px;
-    padding: 88px 196px;
   }
 }
 
@@ -191,6 +214,7 @@
   border: none;
   border-bottom: 1px solid var(--input-border);
   padding: 0 0 20px 0;
+  outline: none;
 
   width: 343px;
   margin-bottom: 16px;
@@ -224,6 +248,7 @@
   border: none;
   border-bottom: 1px solid var(--input-border);
   padding-bottom: 20px;
+  outline: none;
 
   width: 343px;
   padding: 0 0 20px 0;
@@ -256,6 +281,11 @@
 .input-email::placeholder,
 .input-commit::placeholder {
   color: var(--email-teil-text);
+}
+
+.input-email:focus,
+.input-commit:focus {
+  border-bottom: 1px solid var(--footer-title-text);
 }
 
 .footer-button {
@@ -295,9 +325,6 @@
   background-color: var(--hover-button);
 }
 
-/* .wrapper-fidback {
-} */
-
 .footer-list {
   display: flex;
 }
@@ -328,4 +355,8 @@
   border: 1px solid var(--input-border);
   padding: 10px 12px;
   border-radius: 60px;
+}
+
+.footer-link:hover {
+  border: 1px solid var(--footer-title-text);
 }
