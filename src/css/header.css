@@ -11,7 +11,7 @@
    }
    .logo-wrapper{
        position: relative;
-   
+   cursor: pointer;
    }
    .logo-text{
        position: absolute;
@@ -105,9 +105,6 @@
    @media screen and (min-width: 375px) {
        .container {
            margin: 0 auto;
-       }
-       .mobile-modal{
-           display: none;
        }
    }
    @media screen and (min-width: 768px) {

@@ -6,7 +6,13 @@ const closeBtn = document.querySelector('.close-btn');
 const menuLinks = document.querySelectorAll('.modal-nav-item');
 const orderBtn = document.querySelector('.order-btn')
 const orderSection = document.querySelector('#order-section')
+window.addEventListener('load', (event) => {
+    event.preventDefault()
+    menu.classList.remove('is-open')
+    menu.style.transition = '0ms' 
+})
 function openMenu() {
+    menu.style.transition = 'opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1)' 
     menu.classList.add('is-open');
 }
 
