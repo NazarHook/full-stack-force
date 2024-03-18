@@ -1,44 +1,23 @@
-'use strict';
+const menu = document.querySelector('.menu');
+  const navLinks = document.querySelectorAll('.nav ul li a');
+  function toggleLinks() {
+    navLinks.forEach(link => {
+      if (link.style.display === 'none') {
+        link.style.display = 'inline';
+      } else {
+        link.style.display = 'none';
+      }
+    });
+  }
 
-const menu = document.querySelector('.mobile-modal');
-const menuBtn = document.querySelector('.menu-btn');
-const closeBtn = document.querySelector('.close-btn');
-const menuLinks = document.querySelectorAll('.modal-nav-item');
-const orderBtn = document.querySelector('.order-btn')
-const orderSection = document.querySelector('#order-section')
-window.addEventListener('load', (event) => {
-    event.preventDefault()
-    menu.classList.remove('is-open')
-    menu.style.transition = '0ms' 
-})
-function openMenu() {
-    menu.style.transition = 'opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1)' 
-    menu.classList.add('is-open');
-}
+  menu.addEventListener('click', toggleLinks);
 
-function closeMenu() {
-    menu.classList.remove('is-open');
-}
 
-function scroll(event) {
-    event.preventDefault(); 
+  document.addEventListener('DOMContentLoaded', function () {
+    const orderButton = document.querySelector('.button-active');
 
-    const targetId = event.target.getAttribute('href');     
-    const targetElement = document.querySelector(targetId);
-    if (targetElement) {
-        closeMenu();
-        targetElement.scrollIntoView({ behavior: 'smooth' }); 
-    }
-}
-function order(event) {
-    event.preventDefault()
-    closeMenu()
-    orderSection.scrollIntoView({ behavior: 'smooth' });
-}
-orderBtn.addEventListener('click', order)
-menuBtn.addEventListener('click', openMenu);
-closeBtn.addEventListener('click', closeMenu);
-
-menuLinks.forEach(link => {
-    link.addEventListener('click', scroll);
+    orderButton.addEventListener('click', function() {
+        const workTogetherSection = document.getElementById('work-together');
+     workTogetherSection.scrollIntoView({ behavior: 'smooth' });
+    });
 });
