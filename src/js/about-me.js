@@ -30,7 +30,7 @@ new Swiper('.swiper-container', {
     320: {
       slidesPerView: 2
     },
-    786: {
+    768: {
       slidesPerView: 3
     },
     1440: {
@@ -39,5 +39,3 @@ new Swiper('.swiper-container', {
   },
   slideActiveClass: 'selected',
 });
-
-

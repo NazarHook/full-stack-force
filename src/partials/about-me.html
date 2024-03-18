@@ -1,5 +1,5 @@
 <section>
-    <section>
+    <section id="about-me">
     <div class="container">
     <div class="about-me-container">
     <h2 class="visually-hidden">About me</h2>
@@ -10,19 +10,33 @@
         <span class="gray-text">websites</span> that reflect each client's
         unique personality.
       </p>
-      <img 
-      class="about-me-img" 
-       srcset="
-        ./images/default-mobile/about-me.png 343w,
-        ./images/default-tablet/about-me.png  704w,
-        ./images/default-dekstop/about-me.png  680w,
-        ./images/mobile@2x/about-me@2x.png  684w,
-        ./images/tablet@2x/about-me@2x.png  1408w,
-        ./images/dekstop@2x/about-me@2x.png 1360w
-         "
-      sizes="(min-width: 1440px) 680px, (min-width: 768px) 704px, (max-width: 767px) 343px"
-      src="./images/default-mobile/about-me.png"
-      alt="" />
+<picture>
+            <source
+              srcset="
+                ./images/default-dekstop/about-me.jpg 1x,
+                ./images/dekstop@2x/about-me@2x.jpg 2x
+              "
+              media="(min-width: 1440px)"
+            /> 
+            <source
+              srcset="
+                ./images/default-tablet/about-me.jpg    1x,
+                ./images/tablet@2x/about-me@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <source 
+              srcset="
+                ./images/default-mobile/about-me.jpg    1x,
+                ./images/mobile@2x/about-me@2x.jpg 2x
+              "
+              media="(max-width: 767px)"
+            />
+            <img class="about-me-img"
+              src="./images/default-mobile/about-me.jpg"
+              alt="Man with laptop"
+            />
+          </picture>
     </div>
 
 <button class="accordion about-title">About me 
@@ -77,4 +91,5 @@
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="module" src="./js/about-me.js"></script>
 </section>
+  <script type="module" src="./js/about-me.js"></script>    
 </section>
