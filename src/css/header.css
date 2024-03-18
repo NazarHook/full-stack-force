@@ -1,3 +1,81 @@
-.header-page{
- background: blue;
+.header-page {
+    display: none;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.jefferson img {
+    width: 80px; 
+    height: 80px; 
+    object-fit: cover; 
+}
+
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.jefferson {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none; /* Початково приховуємо меню */
+}
+
+.project {
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    .nav ul {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .burger-overlay {
+        display: none;
+    }
+
+    .button-active {
+        background-color: #ed3b44;
+        width: 163px;
+        height: 55px;
+        border: none;
+        border-radius: 50px;
+        color: black;
+    }
+
+    .menu {
+        text-decoration: underline;
+    }
+
+    .project {
+        display: flex;
+    }
 }
