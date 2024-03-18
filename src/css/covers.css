@@ -118,6 +118,10 @@
         width: 500px;
     }
 
+    .marquee__line-r {
+        width: 500px;
+    }
+
     .marquee__inner {
         height: 345px;
     }
