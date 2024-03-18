@@ -13,8 +13,8 @@
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
 
   padding-top: 64px;
-
-  min-width: 320px;
+  width: 100vw;
+  height: 100vh;
 }
 
 @media screen and (min-width: 375px) {
@@ -39,14 +39,12 @@
 
 .wrapper {
   margin: 0 auto;
-  padding: 0;
 }
 
 @media screen and (min-width: 375px) {
   .wrapper {
     width: 375px;
     padding: 32px 16px;
-    margin: 0 auto;
   }
 }
 
@@ -90,8 +88,6 @@
     background-repeat: no-repeat;
     background-position: right 0;
     background-size: 400px 636px;
-
-    min-height: 636px;
   }
 }
 
