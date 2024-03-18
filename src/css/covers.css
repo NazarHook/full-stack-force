@@ -2,6 +2,16 @@
     position: relative;
     width: 375px;
     height: 508px;
+
+    background-image: url(../images/background-theme/covers-bg.png);
+    background-repeat: no-repeat;
+    background-position: -57px 33px;
+    background-size: 822px 625px;
+}
+
+.project-cover-img {
+    width: 282px;
+    height: 162px;
 }
 
 .covers {
@@ -10,6 +20,8 @@
 }
 
 .marquee {
+    /* visibility: hidden; */
+
     position: absolute;
     right: -800px;
     left: 0;
@@ -18,8 +30,9 @@
     height: 508px;
 }
 
+
 .marquee__inner {
-    height: 200px;
+    height: 180px;
     display: flex;
     transform: rotate(16deg);
 }
@@ -38,7 +51,7 @@
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 
-    width: 315px;
+    width: 280px;
 }
 
 @keyframes marqueeLine {
@@ -58,6 +71,22 @@
         position: relative;
         width: 768px;
         height: 960px;
+
+        background-position: -102px 33px;
+        background-size: 1082px 802px;
+    }
+
+    .project-cover-img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .marquee__line {
+        width: 500px;
+    }
+
+    .marquee__inner {
+        height: 345px;
     }
 
     .covers {
