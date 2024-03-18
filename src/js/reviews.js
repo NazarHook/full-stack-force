@@ -53,14 +53,11 @@ async function getReviewsFromServer() {
           slidesPerView: 1,
           spaceBetween: 16,
         },
-        786: {
+        768: {
           slidesPerView: 2,
           spaceBetween: 16,
         },
-        1280: {
-          slidesPerView: 3,
-          spaceBetween: 16,
-        },
+
         1440: {
           slidesPerView: 4,
           spaceBetween: 16,
