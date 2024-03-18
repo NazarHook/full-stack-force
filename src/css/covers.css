@@ -3,9 +3,10 @@
     width: 375px;
     height: 508px;
 
-    background-image: url(../images/background-theme/covers-bg.png);
+    background-image: url(../images/background-theme/covers-bg.png),
+    url(../images/background-theme/covers-bg.png);
     background-repeat: no-repeat;
-    background-position: -57px 33px;
+    background-position: -57px 33px, 204px -134px;
     background-size: 822px 625px;
 }
 
@@ -109,7 +110,8 @@
         width: 768px;
         height: 960px;
 
-        background-position: -102px 33px;
+        background-position: 4px 33px,
+            741px -21px;
         background-size: 1082px 802px;
     }
 
