@@ -9,13 +9,17 @@
     background-size: 822px 625px;
 }
 
+.center-marq {
+    display: flex;
+}
+
 .project-cover-img {
     width: 282px;
     height: 162px;
 }
 
 .covers {
-    width: 375px;
+    width: auto;
     height: 508px;
 }
 
@@ -127,7 +131,7 @@
     }
 
     .covers {
-        width: 768px;
+        width: auto;
         height: 960px;
     }
 
@@ -149,14 +153,14 @@
     }
 
     .covers {
-        width: 1440px;
+        width: auto;
         height: 960px;
+        display: flex;
     }
 
     .marquee {
         position: absolute;
         right: -800px;
-        left: 0;
         overflow: hidden;
         width: 1440px;
         height: 960px;
