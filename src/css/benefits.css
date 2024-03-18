@@ -9,13 +9,11 @@
   .container {
     padding: 0 16px;
   }
-  /* ------------------ */
   .benefits{
     margin-top: 32px;
     margin-bottom: 32px;
     
   }
-  
   .benefits-title{
     font-weight: 600;
     font-size: 16px;
@@ -73,7 +71,6 @@
     width: 100%;
     
   }
-  /* ------------------------------ */
   .order-the-project{
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
