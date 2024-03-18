@@ -10,15 +10,15 @@ const orderSection = document.querySelector('#order-section');
 const orderButton = document.querySelector('.button-active');
 window.addEventListener('load', event => {
   event.preventDefault();
-  menuMobile.classList.remove('is-open');
+  menuMobile.classList.toggle('is-open');
   menuMobile.style.transition = '0ms';
-  menuList.classList.remove('open');
+  menuList.classList.toggle('open');
   menuList.style.transition = '0ms';
 });
 function openMenu() {
   menuMobile.style.transition =
-    'opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
-  menuMobile.classList.add('is-open');
+    'opacity 500ms cubic-bezier(0.4, 0, 0.2, 1), visibility 500ms cubic-bezier(0.4, 0, 0.2, 1), transform 500ms cubic-bezier(0.4, 0, 0.2, 1)';
+  menuMobile.classList.toggle('is-open');
 }
 
 function closeMenu() {
