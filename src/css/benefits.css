@@ -36,7 +36,7 @@
     border-radius: 20px;
     padding: 24px;
     height: 270px;
-    width: 344px;
+    /* width: 344px; */
   }
   .benefits-list-icon-wrapper{
     border-radius: 10px;
@@ -68,7 +68,7 @@
     line-height: 150%;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
-    width: 100%;
+    width: 300px;
     
   }
   .order-the-project{
