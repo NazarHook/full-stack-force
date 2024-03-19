@@ -41,6 +41,7 @@ async function getReviewsFromServer() {
   </div>`;
 
     new Swiper('.mySwiper', {
+      speed: 1000,
       slidesPerView: 1,
       spaceBetween: 16,
       navigation: {
