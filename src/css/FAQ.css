@@ -4,6 +4,7 @@
 
 
 .faq-page {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -13,7 +14,12 @@
     margin-bottom: 32px;
 }
 
-#ac {
+#ac-1,
+#ac-2,
+#ac-3,
+#ac-4,
+#ac-5,
+#ac-6 {
     padding: 20px 0;
     background-color: #1c1d20;
     margin: 0;
@@ -23,17 +29,18 @@
 
 }
 
-#ac:last-child {
+#ac-6:last-child {
     border-bottom: 1px solid #FAFAFA33;
 }
 
 .ac-question {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 16px;
 }
 
 .ac-header {
+
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -44,7 +51,12 @@
 
 }
 
-#ac-button {
+#ac-button-1,
+#ac-button-2,
+#ac-button-3,
+#ac-button-4,
+#ac-button-5,
+#ac-button-6 {
     width: 34px;
     height: 34px;
     border: 1px solid #FAFAFA33;
@@ -83,25 +95,27 @@
     
 } */
 
-.active-btn::before{
-    transform: rotate(180deg); 
-    transition: transform 0.4s; 
+.active-btn::before {
+    transform: rotate(180deg);
+    transition: transform 0.4s;
 }
 
-.ac-trigger::before{
+.ac-trigger::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: transform 0.4s; 
+    transition: transform 0.4s;
 }
 
 .faq-text {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.02em;
     text-align: left;
     color: #FAFAFA99;
+    margin-top: 16px;
 
 
 
@@ -110,7 +124,12 @@
 @media screen and (min-width: 375px) {
 
 
-    #ac {
+    #ac-1,
+    #ac-2,
+    #ac-3,
+    #ac-4,
+    #ac-5,
+    #ac-6 {
         width: 343px;
     }
 
@@ -135,11 +154,21 @@
         width: 656px;
     }
 
-    #ac {
+    #ac-1,
+    #ac-2,
+    #ac-3,
+    #ac-4,
+    #ac-5,
+    #ac-6 {
         width: 704px;
     }
 
-    #ac-button {
+    #ac-button-1,
+    #ac-button-2,
+    #ac-button-3,
+    #ac-button-4,
+    #ac-button-5,
+    #ac-button-6 {
         width: 40px;
         height: 40px;
         padding: 9px;
@@ -168,21 +197,31 @@
         width: 656px;
     }
 
-    #ac {
+    #ac-1,
+    #ac-2,
+    #ac-3,
+    #ac-4,
+    #ac-5,
+    #ac-6 {
         width: 688px;
     }
 
-    #ac:nth-last-of-type(-n+2) {
+    #ac-5,
+    #ac-6 {
         border-bottom: 1px solid #FAFAFA33;
     }
 
-    #ac:nth-of-type(odd) {
+    #ac-1,
+    #ac-3,
+    #ac-5 {
         border-right: 1px solid #FAFAFA33;
         padding-right: 32px;
         padding-top: 32px;
     }
 
-    #ac:nth-of-type(even) {
+    #ac-2,
+    #ac-4,
+    #ac-6 {
         padding-left: 32px;
         padding-top: 32px;
     }
