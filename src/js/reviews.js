@@ -30,9 +30,6 @@ async function getReviewsFromServer() {
   <svg>
     <use href="${arrowRightIcon}#icon-arrow-right"></use>
   </svg>
-    <svg>
-    <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
-    </svg>
 </button></div>
 
     <div><button id = "swiper-button-prev" class="swiper-button-prev">
@@ -44,6 +41,7 @@ async function getReviewsFromServer() {
   </div>`;
 
     new Swiper('.mySwiper', {
+      speed: 1000,
       slidesPerView: 1,
       spaceBetween: 16,
       navigation: {
