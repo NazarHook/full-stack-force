@@ -18,14 +18,16 @@
           type="email"
           name="email"
           placeholder="clients@gmail.com"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="off"
         />
         <p class="status-text js-status-text"></p>
         <input
-          class="input-commit js-input"
+          class="input-commit js-inputCommit"
           type="text"
           name="message"
           placeholder="comments"
+          autocomplete="off"
         />
         <button class="footer-button js-footerBtn" type="submit" disabled>
           Send
