@@ -78,13 +78,13 @@
     letter-spacing: -0.05em;
     padding: 13px 32px;
     border-radius: 60px;
-    background: rgb(237, 59, 68);
+    background: #c6e327;
     margin-top: 25px;
     align-self: flex-start;
 }
 
 .project-link:hover {
-    background: rgb(224, 55, 63);
+    background: #abc41f;
     cursor: pointer;
 }
 
