@@ -2,14 +2,31 @@
     position: relative;
     width: 375px;
     height: 508px;
+
+    background-image: url(../images/background-theme/covers-bg.png),
+    url(../images/background-theme/covers-bg.png);
+    background-repeat: no-repeat;
+    background-position: -57px 33px, 204px -134px;
+    background-size: 822px 625px;
+}
+
+.center-marq {
+    display: flex;
+}
+
+.project-cover-img {
+    width: 282px;
+    height: 162px;
 }
 
 .covers {
-    width: 375px;
+    width: auto;
     height: 508px;
 }
 
 .marquee {
+    /* visibility: hidden; */
+
     position: absolute;
     right: -800px;
     left: 0;
@@ -18,8 +35,9 @@
     height: 508px;
 }
 
+
 .marquee__inner {
-    height: 200px;
+    height: 180px;
     display: flex;
     transform: rotate(16deg);
 }
@@ -34,23 +52,56 @@
     width: calc(100% / 8);
     white-space: nowrap;
     animation-name: marqueeLine;
-    animation-duration: 15s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 50s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     animation-iteration-count: infinite;
 
-    width: 315px;
+    width: 280px;
+}
+.marquee__line-r {
+    /* background-color: #FFDC00; */
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 8);
+    white-space: nowrap;
+    animation-name: marqueeLine-r;
+    animation-duration: 50s;
+    animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    animation-iteration-count: infinite;
+
+    width: 280px;
 }
 
 @keyframes marqueeLine {
-    from {
+    0% {
         transform: translateX(-20%);
     }
 
-    to {
+    50% {
         transform: translateX(-180%);
+    }
+
+    100% {
+        transform: translateX(-20%);
     }
 }
 
+@keyframes marqueeLine-r {
+    0% {
+        transform: translateX(-180%);
+    }
+
+    50% {
+        transform: translateX(-20%);
+    }
+
+    100% {
+        transform: translateX(-180%);
+    }
+}
 
 
 @media (min-width: 768px) {
@@ -58,10 +109,31 @@
         position: relative;
         width: 768px;
         height: 960px;
+
+        background-position: 4px 33px,
+            741px -21px;
+        background-size: 1082px 802px;
+    }
+
+    .project-cover-img {
+        width: 544px;
+        height: 314px;
+    }
+
+    .marquee__line {
+        width: 500px;
+    }
+
+    .marquee__line-r {
+        width: 500px;
+    }
+
+    .marquee__inner {
+        height: 345px;
     }
 
     .covers {
-        width: 768px;
+        width: auto;
         height: 960px;
     }
 
@@ -83,14 +155,14 @@
     }
 
     .covers {
-        width: 1440px;
+        width: auto;
         height: 960px;
+        display: flex;
     }
 
     .marquee {
         position: absolute;
         right: -800px;
-        left: 0;
         overflow: hidden;
         width: 1440px;
         height: 960px;
