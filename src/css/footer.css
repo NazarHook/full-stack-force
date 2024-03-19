@@ -5,6 +5,7 @@
   --span-text: #ed3b44;
   --hover-button: #e0373f;
   --footer-title-text: #fafafa;
+  --color-border-modal: rgba(250, 250, 250, 0.1);
 }
 
 .footer {
@@ -15,6 +16,7 @@
   padding-top: 64px;
   width: 100vw;
   height: 100vh;
+  position: absolute;
 }
 
 @media screen and (min-width: 375px) {
@@ -203,7 +205,7 @@
 
 .input-email {
   color: var(--footer-title-text);
-  background-color: inherit;
+  background-color: var(--background-footer);
 
   font-weight: 500;
   font-size: 16px;
@@ -238,7 +240,7 @@
 
 .input-commit {
   color: var(--footer-title-text);
-  background-color: inherit;
+  background-color: var(--background-footer);
 
   font-weight: 500;
   font-size: 16px;
@@ -389,4 +391,93 @@
   .status-text {
     top: 100px;
   }
+}
+
+/* Modal footer */
+
+.footer-modal {
+  background-color: #1c1d20;
+
+  border: 1px solid var(--color-border-modal);
+  border-radius: 20px;
+  padding: 64px 32px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  width: 343px;
+  height: 276px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-modal {
+    width: 492px;
+    height: 246px;
+
+    padding: 64px;
+  }
+}
+
+.footer-title-modal {
+  color: var(--footer-title-text);
+
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title-modal {
+    min-width: 375px;
+  }
+}
+
+.footer-text-modal {
+  color: var(--email-teil-text);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+
+  width: 279px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-text-modal {
+    width: 364px;
+  }
+}
+
+.footer-button-modal {
+  background-color: inherit;
+  border: none;
+
+  position: absolute;
+
+  top: 20px;
+  right: 20px;
+}
+
+.close-button-svg {
+  fill: var(--footer-title-text);
+}
+
+@media screen and (min-width: 768px) {
+  .close-button-svg {
+    width: 12px;
+    height: 12px;
+  }
+}
+
+/* fix backdrop */
+
+.modal-open {
+  overflow: hidden;
 }
