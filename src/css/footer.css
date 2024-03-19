@@ -188,6 +188,9 @@
     margin-bottom: 64px;
   }
 }
+.footer-form {
+  position: relative;
+}
 
 @media screen and (min-width: 768px) {
   .footer-form {
@@ -213,6 +216,7 @@
   outline: none;
 
   width: 343px;
+
   margin-bottom: 16px;
 }
 
@@ -355,4 +359,34 @@
 
 .footer-link:hover {
   border: 1px solid var(--footer-title-text);
+}
+
+/* Status */
+
+.footer-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* .js-inputEmail {
+  position: relative;
+} */
+
+.status-text {
+  position: absolute;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+
+  display: none;
+
+  top: 45px;
+}
+
+@media screen and (min-width: 768px) {
+  .status-text {
+    top: 100px;
+  }
 }

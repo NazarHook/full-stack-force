@@ -14,20 +14,22 @@
     <div class="wrapper-form">
       <form class="footer-form js-form">
         <input
-          class="input-email"
+          class="input-email js-inputEmail"
           type="email"
           name="email"
           placeholder="clients@gmail.com"
           pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
         />
+        <p class="status-text js-status-text"></p>
         <input
           class="input-commit js-input"
           type="text"
-          name="text"
+          name="message"
           placeholder="comments"
-          maxlength="42"
         />
-        <button class="footer-button" type="submit">Send</button>
+        <button class="footer-button js-footerBtn" type="submit" disabled>
+          Send
+        </button>
       </form>
     </div>
     <div class="wrapper-fidback">
