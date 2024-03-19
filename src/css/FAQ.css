@@ -61,6 +61,7 @@
 
 
 .ac-trigger::before {
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -70,8 +71,8 @@
 
 
 .ac-trigger::after {
-    content: none !important;
 
+    content: none !important;
 }
 
 .ac-panel:last-child {
