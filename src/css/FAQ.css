@@ -4,7 +4,6 @@
 
 
 .faq-page {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -37,8 +36,6 @@
 }
 
 .ac-header {
-
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -104,7 +101,6 @@
 }
 
 .faq-text {
-    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
@@ -112,8 +108,6 @@
     text-align: left;
     color: #FAFAFA99;
     margin-top: 16px;
-
-
 
 }
 
