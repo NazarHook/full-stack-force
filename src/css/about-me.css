@@ -29,6 +29,10 @@ body {
     padding: 64px 0 33px 0;
   }
   .first-section {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: center;
     margin-bottom: 32px;
   }
   .about-me-text {
@@ -43,7 +47,6 @@ body {
     text-transform: uppercase;
     padding: 32px;
     box-sizing: border-box;
-    margin-bottom: 16px;
   }
   .green-text {
     color: #c6e327;
@@ -229,6 +232,9 @@ body {
     }
   }
   @media screen and (min-width: 1440px) {
+    .first-section{
+      flex-direction: row;
+    }
     .about-me-container {
       padding: 106px 0 55px 0;
     }

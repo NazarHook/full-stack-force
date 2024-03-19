@@ -26,7 +26,7 @@
 @media screen and (min-width: 768px) {
   .footer {
     min-width: 768px;
-    padding-top: 96px;
+    padding-top: 84px;
   }
 }
 
@@ -76,8 +76,7 @@
     background-image: url(../images/footer/768px/footer-bg-768px-1x.png);
     background-repeat: no-repeat;
     background-position: right 0;
-    background-size: 198px 636px;
-
+    background-size: 198px 605px;
     min-height: 636px;
   }
 }
@@ -87,7 +86,7 @@
     background-image: url(../images/footer/1440px/footer-bg-1440px-1x.png);
     background-repeat: no-repeat;
     background-position: right 0;
-    background-size: 400px 636px;
+    background-size: 400px 348px;
   }
 }
 

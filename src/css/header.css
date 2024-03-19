@@ -106,7 +106,7 @@
        justify-content: center;
        align-items: center;  
        letter-spacing: 0;
-   bottom: 32px; 
+   bottom: 64px; 
    }
    .order-btn:hover{
     background-color: #abc41f;
