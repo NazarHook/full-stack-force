@@ -1,4 +1,6 @@
 import axios from 'axios';
+import arrowLeftIcon from '../images/icons/sprite.svg';
+import arrowRightIcon from '../images/icons/sprite.svg';
 
 const BASE_URI = 'https://portfolio-js.b.goit.study/api/reviews';
 const gallery = document.querySelector('.gallery');
@@ -26,13 +28,13 @@ async function getReviewsFromServer() {
     </div>
     <div><button id = "swiper-button-next" class="swiper-button-next">
   <svg>
-    <use href="./images/icons/sprite.svg#icon-arrow-right"></use>
+    <use href="${arrowRightIcon}#icon-arrow-right"></use>
   </svg>
 </button></div>
 
     <div><button id = "swiper-button-prev" class="swiper-button-prev">
   <svg>
-    <use href="./images/icons/sprite.svg#icon-arrow-left"></use>
+    <use href="${arrowLeftIcon}#icon-arrow-left"></use>
   </svg>
 </button></div>
 
