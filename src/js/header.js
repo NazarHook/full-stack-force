@@ -8,8 +8,8 @@ const menuLinks = document.querySelectorAll('.modal-nav-item');
 const orderBtn = document.querySelector('.order-btn');
 const orderSection = document.querySelector('#order-section');
 const orderButton = document.querySelector('.button-active');
-const header = document.querySelector('.header')
-const scrollUp = document.querySelector('.scroll-up')
+const header = document.querySelector('.header');
+const scrollUp = document.querySelector('.scroll-up');
 window.addEventListener('load', event => {
   event.preventDefault();
   menuMobile.classList.toggle('is-open');
@@ -25,7 +25,7 @@ function openMenu() {
 
 function closeMenu() {
   menuMobile.classList.remove('is-open');
-  menuList.classList.remove('open')
+  menuList.classList.remove('open');
 }
 function toggleLinks() {
   menuList.style.transition =
@@ -55,14 +55,15 @@ menuLinks.forEach(link => {
 });
 orderBtn.addEventListener('click', order);
 menuList.addEventListener('click', scroll);
-scrollUp.addEventListener('click', scrollToHeader)
+scrollUp.addEventListener('click', scrollToHeader);
 menuBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
 menu.addEventListener('click', toggleLinks);
-orderButton.addEventListener('click', order)
-document.addEventListener('click', function(event) {
-  const isClickInsideMenu = menu.contains(event.target) || menuBtn.contains(event.target);
+orderButton.addEventListener('click', order);
+document.addEventListener('click', function (event) {
+  const isClickInsideMenu =
+    menu.contains(event.target) || menuBtn.contains(event.target);
   if (!isClickInsideMenu) {
-      closeMenu();
+    closeMenu();
   }
-});;
+});

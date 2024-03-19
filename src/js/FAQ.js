@@ -18,5 +18,3 @@ for (let i = 0; i < accBtn.length; i++) {
     this.classList.toggle('active-btn');
   });
 }
-
-

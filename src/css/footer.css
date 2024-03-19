@@ -92,8 +92,7 @@
   }
 }
 
-@media (min-resolution: 2dppx),
-  (min-resolution: 192dpi) {
+@media (min-resolution: 2dppx), (min-resolution: 192dpi) {
   .container-footer {
     background-image: url(../images/footer/375px/footer-bg-375px-2x.png),
       url(../images/footer/375px/footer-bg-375px-3x.png);
