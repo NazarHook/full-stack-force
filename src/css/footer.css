@@ -92,27 +92,24 @@
   }
 }
 
-@media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
+@media (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
   .container-footer {
     background-image: url(../images/footer/375px/footer-bg-375px-2x.png),
       url(../images/footer/375px/footer-bg-375px-3x.png);
   }
 }
 
-@media (min-width: 768px) and (min-device-pixel-ratio: 2),
-  (min-width: 768px) and (min-resolution: 192dpi),
-  (min-width: 768px) and (min-resolution: 2dppx) {
+@media (min-width: 768px) and (min-resolution: 2dppx),
+  (min-width: 768px) and (min-resolution: 192dpi) {
   .container-footer {
     background-image: url(../images/footer/768px/footer-bg-768px-2x.png),
       url(../images/footer/768px/footer-bg-768px-3x.png);
   }
 }
 
-@media (min-width: 1440px) and (min-device-pixel-ratio: 2),
-  (min-width: 1440px) and (min-resolution: 192dpi),
-  (min-width: 1440px) and (min-resolution: 2dppx) {
+@media (min-width: 1440px) and (min-resolution: 2dppx),
+  (min-width: 1440px) and (min-resolution: 192dpi) {
   .container-footer {
     background-image: url(../images/footer/1440px/footer-bg-1440px-2x.png),
       url(../images/footer/1440px/footer-bg-1440px-3x.png);
