@@ -2,8 +2,8 @@
   --background-footer: #1c1d20;
   --email-teil-text: rgba(250, 250, 250, 0.6);
   --input-border: rgba(250, 250, 250, 0.2);
-  --span-text: #ed3b44;
-  --hover-button: #e0373f;
+  --span-text: #c6e327;
+  --hover-button: #abc41f;
   --footer-title-text: #fafafa;
 }
 
@@ -260,14 +260,14 @@
 
 .footer-button {
   color: var(--footer-title-text);
-  background-color: var(--span-text);
+  background-color: #c6e327;
 
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
 
   border-radius: 50%;
-  border: 1px solid var(--span-text);
+  border: 1px solid #c6e327;
   width: 100px;
   height: 100px;
   padding: 0;
@@ -294,14 +294,9 @@
 .footer-button:hover {
   background-color: var(--hover-button);
 }
-
-/* .wrapper-fidback {
-} */
-
 .footer-list {
   display: flex;
 }
-
 @media screen and (min-width: 768px) {
   .footer-item {
     padding: 10px 0;

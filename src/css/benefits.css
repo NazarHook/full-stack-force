@@ -9,13 +9,11 @@
   .container {
     padding: 0 16px;
   }
-  /* ------------------ */
   .benefits{
     margin-top: 32px;
     margin-bottom: 32px;
     
   }
-  
   .benefits-title{
     font-weight: 600;
     font-size: 16px;
@@ -38,7 +36,7 @@
     border-radius: 20px;
     padding: 24px;
     height: 270px;
-    width: 344px;
+    /* width: 344px; */
   }
   .benefits-list-icon-wrapper{
     border-radius: 10px;
@@ -70,10 +68,9 @@
     line-height: 150%;
     letter-spacing: -0.02em;
     color: rgba(250, 250, 250, 0.6);
-    width: 100%;
+    width: 300px;
     
   }
-  /* ------------------------------ */
   .order-the-project{
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
@@ -85,6 +82,9 @@
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #fafafa;
+  }
+  .order-the-project:hover{
+    border: 1px solid #fafafa;
   }
   .order{
     width: 367px;
