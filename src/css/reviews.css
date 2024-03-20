@@ -49,7 +49,7 @@
   padding: 32px 24px;
   width: 332px;
   height: 302px;
-  overflow: scroll;
+  overflow-x: auto;
 }
 
 .author {
