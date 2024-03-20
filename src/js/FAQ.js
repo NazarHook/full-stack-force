@@ -8,15 +8,11 @@ const accordions = Array.from(
 new Accordion(accordions, {
   showMultiple: true,
 });
-
 const accBtn = document.querySelectorAll('.more-btn');
 
-console.log(accBtn);
 
 for (let i = 0; i < accBtn.length; i++) {
   accBtn[i].addEventListener('click', function () {
     this.classList.toggle('active-btn');
   });
 }
-
-
