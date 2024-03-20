@@ -63,7 +63,7 @@
 #ac-button-4:hover,
 #ac-button-5:hover,
 #ac-button-6:hover {
-    transition: cubic-bezier(0.4,0,0.2,1);
+    transition: border 500ms cubic-bezier(0.4,0,0.2,1);
     border: 1px solid #FAFAFA80
 }
 .ac-trigger::before {
