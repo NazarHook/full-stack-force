@@ -6,6 +6,7 @@
   --hover-button: #abc41f;
   --footer-title-text: #fafafa;
   --color-border-modal: rgba(250, 250, 250, 0.1);
+  --cubic-all: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer {
@@ -15,7 +16,7 @@
 
   padding-top: 64px;
   width: 100vw;
-  height: 100vh;
+  /* height: 100vh; */
   position: absolute;
 }
 
@@ -288,6 +289,7 @@
 .footer-button {
   color: var(--footer-title-text);
   background-color: #c6e327;
+  transition: color 250ms var(--cubic-all);
 
   font-weight: 500;
   font-size: 16px;
@@ -342,6 +344,7 @@
 
 .footer-link {
   color: var(--footer-title-text);
+  transition: border-color 250ms var(--cubic-all);
 
   font-weight: 500;
   font-size: 14px;

@@ -101,13 +101,20 @@ function onSubmitForm(e) {
         .querySelector('.js-closeModal');
       closeModalButton.addEventListener('click', () => {
         instance.close();
-        document.body.classList.remove('modal-open');
+        closeModal();
       });
 
       document.addEventListener('keyup', event => {
         if (event.key === 'Escape') {
           instance.close();
-          document.body.classList.remove('modal-open');
+          closeModal();
+        }
+      });
+
+      instance.element().addEventListener('click', event => {
+        if (event.target === instance.element()) {
+          instance.close();
+          closeModal();
         }
       });
     })
@@ -163,4 +170,8 @@ function errorSearch(err) {
     title: 'Error',
     message: 'Sorry, your request cannot be processed. Please try again!',
   });
+}
+
+function closeModal() {
+  document.body.classList.remove('modal-open');
 }
