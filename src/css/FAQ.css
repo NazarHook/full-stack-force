@@ -64,11 +64,9 @@
 #ac-button-4:hover,
 #ac-button-5:hover,
 #ac-button-6:hover {
-  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: border 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid #FAFAFA80
   border: 1px solid #FAFAFA80;
-  transition: transform 0.4s;
+  transition: transform 400ms,
+  border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ac-trigger::before {
@@ -84,14 +82,6 @@
 .ac-panel:last-child {
   margin-bottom: 0;
 }
-
-
-
-/* .active-btn::before {
-
-  transition: transform 0.4s;
-} */
-
 .ac-trigger::before {
   display: flex;
   justify-content: center;
@@ -215,5 +205,5 @@
     padding-top: 32px;
   }
 }
-}
+
 
