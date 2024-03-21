@@ -23,6 +23,12 @@
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
+*{
+  transition: color 100ms cubic-bezier(0.4, 0, 0.2, 1),
+   background-color 300ms cubic-bezier(0.4, 0, 0.2, 1),
+   border 500ms cubic-bezier(0.4, 0, 0.2, 1),
+   stroke 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+}
 .container {
   margin: 0 auto;
   padding: 0 0px;

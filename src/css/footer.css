@@ -212,7 +212,7 @@
   border-bottom: 1px solid var(--input-border);
   padding: 0 0 20px 0;
   outline: none;
-
+transition: outline 500ms cubic-bezier(0.4, 0, 0.2, 1);
   width: 343px;
 
   margin-bottom: 16px;
@@ -289,8 +289,6 @@
 .footer-button {
   color: var(--footer-title-text);
   background-color: #c6e327;
-  transition: color 250ms var(--cubic-all);
-
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
