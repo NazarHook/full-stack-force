@@ -14,20 +14,24 @@
     <div class="wrapper-form">
       <form class="footer-form js-form">
         <input
-          class="input-email"
+          class="input-email js-inputEmail"
           type="email"
           name="email"
           placeholder="clients@gmail.com"
-          pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+          pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+          autocomplete="off"
         />
+        <p class="status-text js-status-text"></p>
         <input
-          class="input-commit js-input"
+          class="input-commit js-inputCommit"
           type="text"
-          name="text"
+          name="message"
           placeholder="comments"
-          maxlength="42"
+          autocomplete="off"
         />
-        <button class="footer-button" type="submit">Send</button>
+        <button class="footer-button js-footerBtn" type="submit" disabled>
+          Send
+        </button>
       </form>
     </div>
     <div class="wrapper-fidback">
@@ -38,7 +42,7 @@
           >
         </li>
         <li class="footer-item">
-          <a class="footer-link number-link" href="tel:+380 11 1111 11 11"
+          <a class="footer-link number-link" href="tel:+3801111111111"
             >+380 11 1111 11 11</a
           >
         </li>
