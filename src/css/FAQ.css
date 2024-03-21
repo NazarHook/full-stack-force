@@ -45,7 +45,7 @@
   max-height: 120px;
 }
 
-/* #ac-button-1,
+#ac-button-1,
 #ac-button-2,
 #ac-button-3,
 #ac-button-4,
@@ -56,7 +56,7 @@
   border: 1px solid #fafafa33;
   border-radius: 100px;
   padding: 7px;
-} */
+}
 #ac-button-1:hover,
 #ac-button-2:hover,
 #ac-button-3:hover,

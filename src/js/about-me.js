@@ -4,16 +4,27 @@ import 'accordion-js/dist/accordion.min.css';
 
 const acc = document.getElementsByClassName('accordion');
 
-const accBtn = document.querySelectorAll('.ac-trigger');
+const accBtn = document.querySelector('#acc-btn')
 
-for (let i = 0; i < accBtn.length; i++) {
-  accBtn[i].addEventListener('click', function () {
-    this.classList.toggle('active-btn');
-  });
-}
+accBtn.addEventListener('click', ()=>{
+  accBtn.classList.toggle('active-btn')
+});
 
+const accBtn2 = document.querySelector('#acc-btn2')
 
+accBtn2.addEventListener('click', ()=>{
+  accBtn2.classList.toggle('active-btn')
+});
+const accBtn3 = document.querySelector('#acc-btn3')
 
+accBtn3.addEventListener('click', ()=>{
+  accBtn3.classList.toggle('active-btn')
+});
+
+// function open() {
+//   accBtn.classList.toggle('active-btn')
+// }
+// accBtn.addEventListener("click", open);
 
 
 
