@@ -4,7 +4,6 @@ import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
-
 const inputCommit = document.querySelector('.js-inputCommit');
 const localStorageKey = 'feedback-form-state';
 const formFeedback = document.querySelector('.js-form');
@@ -84,10 +83,8 @@ function onSubmitForm(e) {
   postAPi(formData)
     .then(data => {
       const { message, title } = data;
-      console.log(message, title);
-
       const instance = basicLightbox.create(
-        `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use xlink:href="./images/icons/sprite.svg#icon-x"></use></svg></button></div>`
+        `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use href="./images/icons/sprite.svg#icon-x"></use></svg></button></div>`
       );
       instance.show();
 
@@ -101,13 +98,20 @@ function onSubmitForm(e) {
         .querySelector('.js-closeModal');
       closeModalButton.addEventListener('click', () => {
         instance.close();
-        document.body.classList.remove('modal-open');
+        closeModal();
       });
 
       document.addEventListener('keyup', event => {
         if (event.key === 'Escape') {
           instance.close();
-          document.body.classList.remove('modal-open');
+          closeModal();
+        }
+      });
+
+      instance.element().addEventListener('click', event => {
+        if (event.target === instance.element()) {
+          instance.close();
+          closeModal();
         }
       });
     })
@@ -163,4 +167,8 @@ function errorSearch(err) {
     title: 'Error',
     message: 'Sorry, your request cannot be processed. Please try again!',
   });
+}
+
+function closeModal() {
+  document.body.classList.remove('modal-open');
 }
