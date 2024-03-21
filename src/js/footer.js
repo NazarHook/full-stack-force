@@ -84,8 +84,6 @@ function onSubmitForm(e) {
   postAPi(formData)
     .then(data => {
       const { message, title } = data;
-      console.log(message, title);
-
       const instance = basicLightbox.create(
         `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use xlink:href="./images/icons/sprite.svg#icon-x"></use></svg></button></div>`
       );
