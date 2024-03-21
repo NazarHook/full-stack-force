@@ -3,19 +3,31 @@ import Accordion from 'accordion-js';
 import 'accordion-js/dist/accordion.min.css';
 
 const acc = document.getElementsByClassName('accordion');
-let i;
 
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener('click', function () {
-    this.classList.toggle('active');
-    let panel = this.nextElementSibling;
-    if (panel.style.display === 'block') {
-      panel.style.display = 'none';
-    } else {
-      panel.style.display = 'block';
-    }
-  });
-}
+const accBtn = document.querySelector('#acc-btn')
+
+accBtn.addEventListener('click', ()=>{
+  accBtn.classList.toggle('active-btn')
+});
+
+const accBtn2 = document.querySelector('#acc-btn2')
+
+accBtn2.addEventListener('click', ()=>{
+  accBtn2.classList.toggle('active-btn')
+});
+const accBtn3 = document.querySelector('#acc-btn3')
+
+accBtn3.addEventListener('click', ()=>{
+  accBtn3.classList.toggle('active-btn')
+});
+
+// function open() {
+//   accBtn.classList.toggle('active-btn')
+// }
+// accBtn.addEventListener("click", open);
+
+
+
 
 new Swiper('.swiper-container', {
   navigation: {
