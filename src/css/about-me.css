@@ -85,7 +85,7 @@ main {
   flex-direction: column;
   gap: 20px;
 }
-#accordion {
+#accordion1 {
   background-color: #1c1d20;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -94,7 +94,35 @@ main {
   line-height: 24px; /* 150% */
   letter-spacing: -0.32px;
 }
-#acc-title {
+#accordion2 {
+  background-color: #1c1d20;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  color: rgba(250, 250, 250, 0.4);
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+#accordion3 {
+  background-color: #1c1d20;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  color: rgba(250, 250, 250, 0.4);
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+#acc-title1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#acc-title2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#acc-title3 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -152,7 +180,43 @@ main {
 .active-btn {
   transform: rotate(180deg);
 }
-#acc-text {
+#acc-text1 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text2-1 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text2-2 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text2-3 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text3-1 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text3-2 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text3-3 {
   color: #fafafa;
   font-weight: 500;
   line-height: 24px;
@@ -290,7 +354,25 @@ main {
   #acc-text-first {
     margin-left: 696px;
   }
-  #acc-text {
+  #acc-text1 {
+    margin-left: 696px;
+  }
+  #acc-text2-1 {
+    margin-left: 696px;
+  }
+  #acc-text2-2 {
+    margin-left: 696px;
+  }
+  #acc-text2-3 {
+    margin-left: 696px;
+  }
+  #acc-text3-1 {
+    margin-left: 696px;
+  }
+  #acc-text3-2 {
+    margin-left: 696px;
+  }
+  #acc-text3-3 {
     margin-left: 696px;
   }
   .arrow-right {
