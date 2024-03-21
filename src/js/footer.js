@@ -85,7 +85,7 @@ function onSubmitForm(e) {
     .then(data => {
       const { message, title } = data;
       const instance = basicLightbox.create(
-        `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use xlink:href="${xIcon}#icon-x"></use></svg></button></div>`
+        `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use href="${xIcon}#icon-x"></use></svg></button></div>`
       );
       instance.show();
 
