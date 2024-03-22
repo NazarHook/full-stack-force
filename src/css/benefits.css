@@ -33,12 +33,17 @@
     justify-content: center;
     padding-bottom: 32px;
   }
+
+  .benefits-list-item:hover {
+    box-shadow: 0 0.5em 0.5em -0.4em #c6e327;
+  }
   .benefits-list-item{
     background: #242527;
     border-radius: 20px;
     padding: 24px;
     height: 270px;
     width: 344px;
+    transition: all 500ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   .benefits-list-icon-wrapper{
     border-radius: 10px;
