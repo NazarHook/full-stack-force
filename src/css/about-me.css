@@ -29,6 +29,10 @@ main {
   padding: 64px 0 33px 0;
 }
 .first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
   margin-bottom: 32px;
 }
 .about-me-text {
@@ -85,7 +89,7 @@ main {
   flex-direction: column;
   gap: 20px;
 }
-#accordion {
+#accordion1 {
   background-color: #1c1d20;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -94,7 +98,35 @@ main {
   line-height: 24px; /* 150% */
   letter-spacing: -0.32px;
 }
-#acc-title {
+#accordion2 {
+  background-color: #1c1d20;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  color: rgba(250, 250, 250, 0.4);
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+#accordion3 {
+  background-color: #1c1d20;
+  border: none;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  color: rgba(250, 250, 250, 0.4);
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.32px;
+}
+#acc-title1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#acc-title2 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+#acc-title3 {
   display: flex;
   justify-content: space-between;
   padding-bottom: 20px;
@@ -124,7 +156,8 @@ main {
   padding: 9px;
   width: 36px;
   height: 36px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #acc-btn3 {
   content: url("data:image/svg+xml;charset=UTF-8,<svg  width='10' height='10' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'><path d='M11 1.5L6 6.5L1 1.5' stroke='white' stroke-width='2'/></svg>");
@@ -137,7 +170,8 @@ main {
   padding: 9px;
   width: 36px;
   height: 36px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
+   border 500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 #acc-btn:hover {
   border: 1px solid rgba(250, 250, 250, 0.5);
@@ -152,7 +186,43 @@ main {
 .active-btn {
   transform: rotate(180deg);
 }
-#acc-text {
+#acc-text1 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text2-1 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text2-2 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text2-3 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text3-1 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text3-2 {
+  color: #fafafa;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.32px;
+}
+#acc-text3-3 {
   color: #fafafa;
   font-weight: 500;
   line-height: 24px;
@@ -208,6 +278,7 @@ main {
   background-color: transparent;
   margin-top: auto;
   margin-bottom: auto;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .arrow-right {
@@ -234,11 +305,7 @@ main {
     padding: 64px 0 33px 0;
   }
   .first-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
   #accordion-container {
     gap: 32px;
@@ -271,6 +338,7 @@ main {
 @media screen and (min-width: 1440px) {
   .first-section {
     flex-direction: row;
+    margin-bottom: 96px;
   }
   .about-me-container {
     padding: 106px 0 55px 0;
@@ -290,7 +358,25 @@ main {
   #acc-text-first {
     margin-left: 696px;
   }
-  #acc-text {
+  #acc-text1 {
+    margin-left: 696px;
+  }
+  #acc-text2-1 {
+    margin-left: 696px;
+  }
+  #acc-text2-2 {
+    margin-left: 696px;
+  }
+  #acc-text2-3 {
+    margin-left: 696px;
+  }
+  #acc-text3-1 {
+    margin-left: 696px;
+  }
+  #acc-text3-2 {
+    margin-left: 696px;
+  }
+  #acc-text3-3 {
     margin-left: 696px;
   }
   .arrow-right {
