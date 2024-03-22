@@ -119,6 +119,7 @@ function onSubmitForm(e) {
     .finally(() => {
       formFeedback.reset();
       localStorage.removeItem(localStorageKey);
+      footerBtn.disabled = true;
     });
 }
 
