@@ -5,7 +5,6 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 import xIcon from '../images/icons/sprite.svg'
-console.log(xIcon);
 const inputCommit = document.querySelector('.js-inputCommit');
 const localStorageKey = 'feedback-form-state';
 const formFeedback = document.querySelector('.js-form');
