@@ -4,6 +4,8 @@ import 'basiclightbox/dist/basicLightbox.min.css';
 import axios from 'axios';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
+import xIcon from '../images/icons/sprite.svg'
+console.log(xIcon);
 const inputCommit = document.querySelector('.js-inputCommit');
 const localStorageKey = 'feedback-form-state';
 const formFeedback = document.querySelector('.js-form');
@@ -84,7 +86,7 @@ function onSubmitForm(e) {
     .then(data => {
       const { message, title } = data;
       const instance = basicLightbox.create(
-        `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use href="../images/icons/sprite.svg#icon-close-x"></use></svg></button></div>`
+        `<div class="footer-modal"><h2 class="footer-title-modal">${title}</h2><p class="footer-text-modal">${message}</p><button class="footer-button-modal js-closeModal"><svg width="11" height="11" class="close-button-svg"><use href="${xIcon}#icon-close-x"></use></svg></button></div>`
       );
       instance.show();
 
