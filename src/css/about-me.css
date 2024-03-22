@@ -29,6 +29,10 @@ main {
   padding: 64px 0 33px 0;
 }
 .first-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
   margin-bottom: 32px;
 }
 .about-me-text {
@@ -301,11 +305,7 @@ main {
     padding: 64px 0 33px 0;
   }
   .first-section {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: center;
-    margin-bottom: 32px;
+    margin-bottom: 64px;
   }
   #accordion-container {
     gap: 32px;
@@ -338,6 +338,7 @@ main {
 @media screen and (min-width: 1440px) {
   .first-section {
     flex-direction: row;
+    margin-bottom: 96px;
   }
   .about-me-container {
     padding: 106px 0 55px 0;
